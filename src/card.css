@@ -1,0 +1,61 @@
+
+  :root{
+      --bg:#f7f7fb; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --accent:#2563eb;
+      --radius:18px; --shadow:0 10px 25px rgba(0,0,0,.08);
+    
+    }
+    .maindiv{
+        width: 100%;
+        padding: 40px;
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:32px; background:var(--bg); color:var(--text);
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      display:flex; place-items:center; 
+    }
+    .heading-main{
+        width:90%;
+        margin: auto;
+    }
+    .card{
+     
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .banner{
+      height:120px; background:
+        radial-gradient(120px 60px at 10% 20%, #93c5fd 0 60%, transparent 61%),
+        radial-gradient(200px 100px at 90% 10%, #a7f3d0 0 60%, transparent 61%),
+        linear-gradient(135deg, #dbeafe, #e9d5ff 60%, #fef3c7);
+    }
+    .content{padding:22px 22px 20px 22px; display:grid; grid-template-columns:auto 1fr; gap:16px}
+    .avatar{
+      width:88px; height:88px; border-radius:50%; border:3px solid #fff;
+      margin-top:-54px; object-fit:cover; box-shadow:0 6px 16px rgba(0,0,0,.15)
+    }
+    .name{font-weight:700; font-size:1.25rem}
+    .job{color:var(--accent); font-weight:600; margin-top:2px}
+    .row{display:flex; gap:10px; align-items:flex-start; color:var(--muted); margin-top:8px}
+    .row svg{flex:0 0 18px; margin-top:2px}
+    .actions{display:flex; gap:10px; padding:0 22px 22px}
+    .btn{
+      flex:1; padding:10px 14px; border-radius:12px; border:1px solid #e5e7eb;
+      background:#fff; cursor:pointer; font-weight:600;
+      transition:transform .08s ease, box-shadow .2s ease;
+    }
+    .btn.primary{background:var(--accent); color:#fff; border-color:transparent}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.08)}
+    @media (max-width:480px){
+      .content{grid-template-columns:1fr; text-align:center}
+      .avatar{margin: -54px auto 0 auto}
+      .actions{flex-direction:column}
+    }
