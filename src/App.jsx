@@ -1,14 +1,17 @@
 
 import './card.css'
 import CardComponent from './card'
+import TechCrunchHeadlines from './news-api'
 
 
 function App() {
  
  return (
     <>
+    < TechCrunchHeadlines />
     <h1 className='heading-main'> person Details</h1>
     <div className="maindiv">
+
     
       <CardComponent name="Rahul Verma"
         job="Frontend Developer"
@@ -32,3 +35,4 @@ function App() {
 }
 
 export default App
+
