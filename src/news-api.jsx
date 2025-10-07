@@ -27,7 +27,6 @@ export default function TechCrunchHeadlines() {
                      <div>{a.title}</div>
                     </a>
                     <div>{a.publishedAt}</div>
-
                 </div>
 
             ))}
