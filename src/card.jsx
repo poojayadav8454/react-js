@@ -2,10 +2,8 @@ import React from "react";
 import img from "./f.png";
 function CardComponent({ name, job, address, email, image }){
     return(
-       
-    <article class="card">
+     <article class="card">
     <div class="banner"></div>
-
     <div class="content">
        <img className="avatar" src={img} alt="Profile photo" width={200}/>
       <div>
@@ -30,7 +28,6 @@ function CardComponent({ name, job, address, email, image }){
         </div>
       </div>
     </div>
-
     <div class="actions">
       <button class="btn primary">Contact</button>
       <button class="btn">View Profile</button>

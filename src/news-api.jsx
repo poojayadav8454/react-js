@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 export default function TechCrunchHeadlines() {
     const [items, setItems] = useState([]);
     const [err, setErr] = useState("");
@@ -19,15 +20,16 @@ export default function TechCrunchHeadlines() {
         <div className="main">
             {items.map(a => (
 
-                <div key={a.url}>
+                <div 
+                >
                     <div>{a.content}</div>
                     <p>{a.author}</p>
                     <p>{a.description}</p>
                     <a href={a.url} target="_blank" rel="noreferrer">
-                     <div>{a.title}</div>
+                    <div>{a.title}</div>
                     </a>
                     <div>{a.publishedAt}</div>
-                </div>
+                 </div>
 
             ))}
         </div>
